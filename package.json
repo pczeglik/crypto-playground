@@ -1,0 +1,35 @@
+{
+  "name": "crypto-playground",
+  "version": "1.0.0",
+  "description": "",
+  "module": "main.js",
+  "type": "module",
+  "scripts": {
+    "cleanup": "yarn cleanup:coverage && yarn cleanup:nm",
+    "cleanup:coverage": "rm -rf coverage",
+    "cleanup:nm": "rm -rf node_modules",
+    "dev": "npx tsx watch src/main.ts",
+    "test": "yarn node --experimental-vm-modules ./node_modules/.bin/jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pczeglik/crypto-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pczeglik/crypto-playground/issues"
+  },
+  "homepage": "https://github.com/pczeglik/crypto-playground#readme",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "tsx": "^4.16.2",
+    "typescript": "^5.0.4"
+  },
+  "packageManager": "yarn@4.3.1"
+}
